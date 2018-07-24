@@ -8,4 +8,8 @@
 			document.querySelector(target_id).scrollIntoView({behavior: 'smooth'});
 		};
 	}
+
+	window.onload = function() {
+		document.querySelector("#preloader").classList.add("hidden");
+	};
 })();
