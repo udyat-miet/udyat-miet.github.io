@@ -125,6 +125,20 @@ section h1 {
   text-transform: uppercase;
 }
 
+section .icon {
+  font-size: 8em;
+  line-height: 1;
+  text-align: center;
+  color: #eee;
+}
+
+@media (max-width: 768px) {
+
+  section .icon {
+    line-height: 1.4;
+  }
+}
+
 footer {
   text-align: center;
   font-size: 0.9em;
@@ -162,6 +176,13 @@ footer {
   text-decoration: none;
 }
 
+#intro p {
+  max-width: 500px;
+  margin: auto;
+  color: #4F86C6;
+  font-weight: 500;
+}
+
 #mission ul {
   list-style-type: none;
   padding: 0;
@@ -185,29 +206,19 @@ footer {
   background: #4F86C6;
 }
 
-#contribute .fa {
-  font-size: 8em;
-  line-height: 1;
-  text-align: center;
-  color: #eee;
-}
-
-@media (max-width: 768px) {
-
-  #contribute .fa {
-    line-height: 1.4;
-  }
-}
-
 #volunteer {
   background: #519D9E;
+}
+
+#volunteer p {
+  color: #eee;
 }
 
 /* TODO make this better */
 #how-to-contribute a, #volunteer a, #join a {
   display: inline-block;
   padding: 15px 2.5%;
-  margin: 1%;
+  margin: 20px 1%;
   border: 2px solid #eee;
   border-radius: 4px;
   text-transform: uppercase;
@@ -217,12 +228,8 @@ footer {
 
 #join p, #volunteer p {
   text-align: left;
-  max-width: 250px;
+  max-width: 420px;
   margin: auto;
-}
-
-#volunteer p {
-  color: #eee;
 }
 
 #how-to-contribute a, #volunteer a {
@@ -231,6 +238,10 @@ footer {
 
 #join a {
   border-color: #03C4EB;
+}
+
+#join .icon {
+  color: #03C4EB;
 }
 
 #how-to-contribute a:hover, #how-to-contribute a:focus, #how-to-contribute a:active,
